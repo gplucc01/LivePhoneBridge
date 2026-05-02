@@ -37,7 +37,7 @@ The bridge exposes a JSON-RPC interface over TCP that the AbleMind iOS app conne
 /Users/[YourName]/Library/Preferences/Ableton/Live x.x.x/User Remote Scripts/
 ```
 
-If the `User Remote Scripts` folder doesn't exist, create it.
+If the `Remote Scripts` folder doesn't exist, create it.
 
 To find the Library folder: open Finder, click **Go** in the menu bar, hold **Option**, and click **Library**.
 
@@ -46,16 +46,16 @@ To find the Library folder: open Finder, click **Go** in the menu bar, hold **Op
 C:\Users\[YourName]\AppData\Roaming\Ableton\Live x.x.x\Preferences\User Remote Scripts\
 ```
 
-If the `User Remote Scripts` folder doesn't exist, create it.
+If the `Remote Scripts` folder doesn't exist, create it.
 
 ### Step 2: Copy the bridge files
 
 Download the latest release from the [Releases](../../releases) page.
 
-Unzip and copy the entire `LivePhoneBridge` folder into your `User Remote Scripts` directory. The folder structure should look like:
+Unzip and copy the entire `LivePhoneBridge` folder into your `Remote Scripts` directory. The folder structure should look like:
 
 ```
-User Remote Scripts/
+Remote Scripts/
   LivePhoneBridge/
     __init__.py
     server.py
@@ -91,7 +91,7 @@ Or open a terminal and run:
 
 **LivePhoneBridge doesn't appear in the Control Surface dropdown**
 
-Make sure the folder is named exactly `LivePhoneBridge` and contains `__init__.py`. Restart Ableton after copying the files.
+Make sure the folder is named exactly `Remote Scripts` and contains `__init__.py`. Restart Ableton after copying the files.
 
 **"Connection refused" in the iOS app**
 
